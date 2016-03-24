@@ -50,4 +50,4 @@ Allow users to search for users, as well as tracks. Build a VC that displays inf
 
 ### Favoriting
 
-Allow users to favorite and unfavorite users and tracks. Check out the docs; this is done with a `PUT` to `/me/favorites/<track or user id>`.
+Allow users to favorite and unfavorite users and tracks. Check out the docs; this is done with `PUT`s and `DELETE`s to `/me/favorites/<track or user id>`.
