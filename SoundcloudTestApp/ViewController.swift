@@ -15,14 +15,14 @@ class ViewController: UIViewController {
     @IBOutlet private weak var label: UILabel!
     
     @IBAction private func buttonTapped(sender: AnyObject) {
-        SoundcloudAPI.logInOrRecoverToken({ errorDescription in
+        SoundcloudAPI.logInOrRecoverToken { errorDescription in
             if let errorDescription = errorDescription {
                 self.handleLoginError(errorDescription)
                 return
             }
 
             self.fetchUserDetails()
-        })
+        }
     }
 
     @IBAction private func logOutButtonTapped(sender: AnyObject) {
